@@ -1,0 +1,16 @@
+---
+layout: default
+title: Vocabulary
+---
+
+<h1>Grammar</h1> 
+<p>This is where you will learn about :</p>
+<ul>
+  <li>example 1</li>
+  <li>example 2</li>
+  <li>example 3</li>
+</ol>
+
+<hr>
+<p><a href="index.html">Home</a></p>
+<hr>
