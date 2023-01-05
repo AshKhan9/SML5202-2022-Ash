@@ -6,7 +6,7 @@ title: home
 <!--START OUTER DIV TO WRAP PAGE TEXT CONTENT AND SET IT NOT TO TRANSLATE -->
 <div class="notranslate">  
 <h1>Translate English into Spanish</h1>
-<p>Select Spanish From The Drop Down Menu And Enter Any Word In English:</p>
+<p>Select Spanish From The Drop Down Menu And Tap Anywhere On The Screen To See The Translation:</p>
 
 <!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (transInput) IN LEFT COL; OUTPUT (transOutput) IN paragraph in RIGHT COL -->
   <div class="row">
@@ -37,7 +37,7 @@ function myTrans() {
 }
   
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({ includedLanguages: 'fr,de,pt,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+  new google.translate.TranslateElement({ includedLanguages: 'es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
 }
 </script>
 
