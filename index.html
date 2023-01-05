@@ -3,11 +3,36 @@ layout: default
 title: home
 ---
 
-<h1>welcome</h1> 
-<p>On this website you'll learn all about:</p>
-<ol>
-  <li><a href="grammar.html"> Grammar</a> </li>
-  <li><a href="recipe.html">Caramel Cake Recipe</li>
-</ol>
+<form>
+  <label for="word">Enter a word:</label><br>
+  <input type="text" id="word" name="word"><br>
+  <input type="submit" value="Submit">
+</form> 
 
-<hr>
+<div id="definition"></div>
+
+<script>
+  function getDefinition() {
+    var word = document.getElementById("word").value;
+    // Make a request to the dictionary API
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == XMLHttpRequest.DONE) {
+        var definition = xhr.responseText;
+        document.getElementById("definition").innerHTML = definition;
+      }
+    }
+    xhr.open("GET", "https://spanish-english-dictionary-api.com/api/definition?word=" + word, true);
+    xhr.send();
+  }
+
+  // Add event listener to the form submission
+  var form = document.querySelector("form");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    getDefinition();
+  });
+</script>
+
+
+
