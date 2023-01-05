@@ -4,66 +4,35 @@ title: Grammar
 ---
 
 <h1>Grammar</h1> 
-<p>This is where you will learn about :</p>
-<ul>
-  <li>Past tense</li>
-  <li>Present Tense</li>
-  <li>Perfecet Tense</li>
+<p>This is where you will learn about the basics of Spanish Grammar:</p>
+
+<ol class="list-group list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Nouns</div>
+Nouns in Spanish are either masculine or feminine. This is indicated by the article (el or la) that is used with the noun, as well as by the ending of the noun itself. For example, the noun "el libro" (the book) is masculine, while "la mesa" (the table) is feminine.    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Adjectives</div>
+Adjectives in Spanish must match the noun they are describing in gender and number. For example, "el perro grande" (the big dog), "la casa pequeña" (the small house).    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Verbs</div>
+Spanish has a number of verb tenses, including present, past, and future. The most basic verb tense is the present tense, which is used to describe actions that are happening now. For example, "Hablo español" (I speak Spanish).
+Subject-verb agreement    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subject-Verb Agreement</div>
+In Spanish, the verb must agree with the subject in terms of number (singular or plural) and person (first, second, or third). For example, "Yo hablo español" (I speak Spanish), "Nosotros hablamos español" (We speak Spanish).    </div>
+  </li>
 </ol>
+
 
 <iframe src="https://h5p.org/h5p/embed/1322744" width="1090" height="683" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Dialog Cards"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
-<!--START OUTER DIV TO WRAP PAGE TEXT CONTENT AND SET IT NOT TO TRANSLATE -->
-<div class="notranslate">  
-<h1>Translation Example</h1>
-<p>This page contains a customised version of Google Translate, for students to translate items they wish to. It's a bit experimental, so try it out.</p>
-<p>Note: The basic code for Google Translate will translate the entire page. So we have to set up some form fields and block the translation from applying to the whole page.</p>
-<p>Enter your phrase and choose a language:</p>
-
-<!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (transInput) IN LEFT COL; OUTPUT (transOutput) IN paragraph in RIGHT COL -->
-  <div class="row">
-  <div class="col-sm-6 p-3 bg-light text-white">
-     <div id="google_translate_element"></div>
-      <textarea rows="3" id="transInput" style="width:100%;"></textarea>
-     </div>
-  <div class="col-sm-6 p-3 bg-light text-black translate">
-    <h4 class="notranslate">Translation:</h4>
-    <p id="transOutput" style="font-size:120%;"></p>
-  </div>
-</div>
-<!-- END TRANSLATION FIELDS AREA -->
-</div>
-<!--END OUTER DIV-->
-
-<!-- SCRIPTS -->
-<!-- SCRIPT 1: FUNCTIONS TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED. THEN CALL TO GOOGLE TRANSLATE BUTTON HANDLER -->
-
-<script> 
-var x = document.getElementById("google_translate_element");
-x.addEventListener("click", myTrans);
- 
-function myTrans() {
-  let myPhrase = document.getElementById("transInput").value;
-  document.getElementById('transOutput').innerHTML = myPhrase;
-  document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
-}
-  
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({ includedLanguages: 'fr,de,pt,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-}
-</script>
-
-<!-- SCRIPT 2: LINK TO GOOGLE TRANSLATION FUNCTION SCRIPT  -->
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<!-- SCRIPT 3: FUNCTION TO ENSURE PAGE TITLE IN BROWSER TAB DOES NOT TRANSLATE WHEN PAGE LOADS -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", (event) => {
-    document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
-  });
-</script>
 
 
 <hr>
